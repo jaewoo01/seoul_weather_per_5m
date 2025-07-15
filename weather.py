@@ -2,7 +2,7 @@ import requests as rq         # url get방식 요청
 import csv                    # csv활용
 import os                     # 폴더 생성
 from datetime import datetime # 시간 변환 요청
-API_KEY = os.getenv(API_KEY_W)
+API_KEY = os.getenv("API_KEY_W")
 city = "seoul"
 url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric&lang=kr"
 response = rq.get(url)
